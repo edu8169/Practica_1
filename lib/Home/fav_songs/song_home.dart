@@ -52,8 +52,10 @@ class _SongHomeState extends State<SongHome> {
                     _isFavorite = false;
                     setState(() {});
                   } else {
-                    BlocProvider.of<FavoritesBloc>(context)
-                        .add(OnAddFavorite(song: widget.song));
+                    BlocProvider.of<FavoritesBloc>(context).add(OnAddFavorite(
+                        song: widget.song,
+                        fileTitle: widget.song.title,
+                        storageName: "canciones"));
                     widget.song["is_favorite"] = true;
                     _isFavorite = true;
                     setState(() {});

@@ -43,11 +43,15 @@ dependencies:
   flutter_launcher_icons: ^0.10.0
   flutter_dotenv: ^5.0.2
   equatable: ^2.0.5
-  cloud_firestore: ^3.5.0
-  flutterfire_ui: ^0.4.3+11
   url_launcher: ^6.1.6
+  permission_handler: 
+  path_provider: ^2.0.11
 
 flutter_icons:
+  image_path: "assets/icon/icon.png" 
+  android: true
+  ios: true
+
 android: true
 ios: true
 image_path: "assets/icon/icon.png"
